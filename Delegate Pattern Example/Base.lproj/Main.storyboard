@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="s6h-Nh-L5V">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="Delegate_Pattern_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6E-qF-Bbh">
+                                <rect key="frame" x="20" y="547" width="335" height="60"/>
+                                <color key="backgroundColor" red="0.12175070740916902" green="0.4200436162091048" blue="0.54347474093264247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="CW5-xo-swU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Change date">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="54t-zp-WzC" kind="show" identifier="mySegue" id="azV-eM-9ON"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selected date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIf-af-Ggl">
+                                <rect key="frame" x="20" y="94" width="254" height="51"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="42"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SqG-cF-uwL">
+                                <rect key="frame" x="20" y="185" width="335" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVY-Tk-Rmv">
+                                <rect key="frame" x="20" y="342" width="335" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Month:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YyB-b5-0p6">
+                                <rect key="frame" x="20" y="263.5" width="335" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YyB-b5-0p6" secondAttribute="trailing" constant="20" id="2qG-gV-SL9"/>
+                            <constraint firstItem="pVY-Tk-Rmv" firstAttribute="top" secondItem="YyB-b5-0p6" secondAttribute="bottom" constant="40" id="9eB-MG-yH9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nIf-af-Ggl" secondAttribute="trailing" constant="101" id="JhR-Pp-Gd6"/>
+                            <constraint firstItem="nIf-af-Ggl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Jlw-bx-uHM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SqG-cF-uwL" secondAttribute="trailing" constant="20" id="S12-w3-6Gd"/>
+                            <constraint firstItem="b6E-qF-Bbh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="XNc-sf-g1N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pVY-Tk-Rmv" secondAttribute="trailing" constant="20" id="Y2G-aa-GxL"/>
+                            <constraint firstItem="pVY-Tk-Rmv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ZyD-fc-0hu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="b6E-qF-Bbh" secondAttribute="trailing" constant="20" id="crv-tQ-jXO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="b6E-qF-Bbh" secondAttribute="bottom" constant="60" id="hQP-Ae-b3g"/>
+                            <constraint firstItem="YyB-b5-0p6" firstAttribute="top" secondItem="SqG-cF-uwL" secondAttribute="bottom" constant="40" id="lJX-OG-KHP"/>
+                            <constraint firstItem="nIf-af-Ggl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mnG-VF-y9m"/>
+                            <constraint firstItem="SqG-cF-uwL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="sa9-sN-T6O"/>
+                            <constraint firstItem="SqG-cF-uwL" firstAttribute="top" secondItem="nIf-af-Ggl" secondAttribute="bottom" constant="40" id="wmZ-0r-BNb"/>
+                            <constraint firstItem="YyB-b5-0p6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="zOa-U9-DqJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="983-iX-N2S"/>
+                    <connections>
+                        <outlet property="changeDateButton" destination="b6E-qF-Bbh" id="9ks-q7-Nwm"/>
+                        <outlet property="dayLabel" destination="SqG-cF-uwL" id="azk-jh-aJy"/>
+                        <outlet property="monthLabel" destination="YyB-b5-0p6" id="WVq-WE-ByR"/>
+                        <outlet property="yearLabel" destination="pVY-Tk-Rmv" id="9W2-hC-xiC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1951.2" y="-202.84857571214394"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="1KK-MW-kuc">
+            <objects>
+                <viewController id="54t-zp-WzC" customClass="SecondViewController" customModule="Delegate_Pattern_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D6h-3T-2dS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="2mC-cP-otC">
+                                <rect key="frame" x="0.0" y="431" width="375" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="593431491.45003796">
+                                    <!--2019-10-22 10:04:51 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="dateChanged:" destination="54t-zp-WzC" eventType="valueChanged" id="DUM-qf-Ph9"/>
+                                    <action selector="editingChanged:" destination="54t-zp-WzC" eventType="editingChanged" id="c1R-3Q-M6F"/>
+                                    <action selector="editingdidBegin:" destination="54t-zp-WzC" eventType="editingDidBegin" id="I4x-8F-E34"/>
+                                </connections>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtj-gM-zFP">
+                                <rect key="frame" x="20" y="94" width="239" height="51"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="42"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2mC-cP-otC" firstAttribute="bottom" secondItem="GzL-PP-mxl" secondAttribute="bottom" constant="-20" id="4nu-Lr-r8T"/>
+                            <constraint firstItem="2mC-cP-otC" firstAttribute="centerX" secondItem="GzL-PP-mxl" secondAttribute="centerX" id="ORy-bW-TLy"/>
+                            <constraint firstItem="wtj-gM-zFP" firstAttribute="leading" secondItem="GzL-PP-mxl" secondAttribute="leading" constant="20" id="gFm-eW-9zm"/>
+                            <constraint firstItem="wtj-gM-zFP" firstAttribute="top" secondItem="GzL-PP-mxl" secondAttribute="top" constant="30" id="hKo-Mj-5un"/>
+                            <constraint firstItem="GzL-PP-mxl" firstAttribute="trailing" secondItem="wtj-gM-zFP" secondAttribute="trailing" constant="116" id="i91-UB-86N"/>
+                            <constraint firstItem="2mC-cP-otC" firstAttribute="leading" secondItem="GzL-PP-mxl" secondAttribute="leading" id="jRe-yc-KBX"/>
+                            <constraint firstItem="2mC-cP-otC" firstAttribute="trailing" secondItem="GzL-PP-mxl" secondAttribute="trailing" id="jik-wU-tVe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GzL-PP-mxl"/>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="2mC-cP-otC" id="Y5X-pT-8sk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eM6-Fx-uGP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2887.1999999999998" y="-202.84857571214394"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="URn-5c-DjR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="s6h-Nh-L5V" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jJc-JM-cKo">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2wC-NQ-kck"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DJ9-Vu-p8H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1012" y="-202.84857571214394"/>
+        </scene>
+    </scenes>
+</document>
